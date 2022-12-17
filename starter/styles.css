@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --text-color: rgb(250, 231, 196);
+  --background: #3b571d;
+  --table-head: #60bb00;
+  --table-row1: #56703b;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background: var(--background);
+  color: var(--text-color);
+  text-align: center;
+}
+
+table {
+  border-radius: 150px;
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 1080px;
+  margin: auto;
+}
+
+table thead tr {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background: var(--table-head);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+th {
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px;
+  color: #232323;
+}
+
+td {
+  padding: 20px 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+tr:nth-child(2n + 2) {
+  background-color: var(--table-row1);
+}
+
+button {
+  width: 85%;
+  font-size: 1.2rem;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-top: 1px solid;
+  padding: 20px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  cursor: pointer;
+  max-width: 1080px;
+  margin: auto;
+  opacity: 0.3;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.sorted {
+  font-weight: bolder;
+  font-style: italic;
+}
